@@ -55,7 +55,7 @@ module JekyllImport
           @body = row[2]         || missing_data("Post body not present in third column.")
           @published_at = row[3] || missing_data("Post publish date not present in fourth column.")
           @markup = row[4]       || "markdown"
-          @image = row[5]       || "image"
+          @image = row[5]        || ""
         end
 
         def published_at
